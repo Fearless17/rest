@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="#" className="footer__icon"><img src={twitter} alt="twitter"/></a>
         </div>
         <div className="footer__copyright">
-          Copyright © 2022 Open
+          Copyright © 2023 Open
         </div>
       </div>
     </div>
