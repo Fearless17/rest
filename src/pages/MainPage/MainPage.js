@@ -1,13 +1,23 @@
-import React from 'react'
+import {React , useState} from 'react'
 import './mainpage.css'
 import AnchorLink from '../../components/AnchorLink/AnchorLink'
 import BookingForm from '../../components/BookingForm/BookingForm'
+import Form from '../../components/Form/Form'
 import { Link } from 'react-router-dom';
-const MainPage = () => {
-    return (
-        <
 
-            >
+
+
+const MainPage = () => {
+    const [isFormOpen, setIsFormOpen] = useState(false);
+
+
+    const handleCloseForm = () => {
+        setIsFormOpen(false);
+      };
+
+
+    return (
+        <>
             <div class="wrapper_header">
                 <div class="header__content">
                     <div class="header__content-title">
@@ -54,11 +64,24 @@ const MainPage = () => {
                             <h2 class="info__title">Присоединяйтесь к рестораном, которые уже есть в сервисе<br />
                                 и управляйте бронированием с помощью Open
                             </h2>
-                            <button class="info__button default-button">Узнать больше</button>
+                            {isFormOpen ? (<button class="info__button default-button" onClick={handleCloseForm}>Закрыть форму</button>) 
+                            : (<button class="info__button default-button" onClick={() => setIsFormOpen(true)}>Добавить ресторан</button>)}
+                            
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div>
+                
+                {isFormOpen ? (
+                    <Form onClose={handleCloseForm} />
+                ) : (
+                    ''
+                )}
+            </div>
+
+
         </>
     )
 }
