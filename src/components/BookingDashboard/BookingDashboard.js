@@ -1,6 +1,7 @@
 import React from 'react'
 import BookingForm from '../BookingForm/BookingForm'
 import BookingManager from '../BookingManager/BookingManager'
+import './bookingdashboard.css'
 
 
 const BookingDashboard = () => {

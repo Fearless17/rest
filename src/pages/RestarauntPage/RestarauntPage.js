@@ -9,8 +9,8 @@ const RestarauntPage = () => {
       <div className="rest-photo"></div>
       <div className='container'>
         <div className='rest-info'>
-          <RestInfo/>
-          <AdditionalInfo/>
+          <RestInfo />
+          <AdditionalInfo />
         </div>
       </div>
     </div>

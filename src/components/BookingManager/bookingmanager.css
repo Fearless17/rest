@@ -1,0 +1,20 @@
+.section-user__left {
+    padding-top: 40px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 1380px) {
+    .section-user__left {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  @media (max-width: 870px) {
+    .section-user__left {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+  }

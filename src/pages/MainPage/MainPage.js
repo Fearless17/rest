@@ -13,32 +13,7 @@ const MainPage = () => {
                     <div class="header__content-title">
                         <h1>Найти столик</h1>
                     </div>
-
-                    
-                        <BookingForm />
-
-
-                            {/* <div class="header__inputs">
-                                <div class="header__input">
-                                    <input type="text" placeholder="Дата" class="header__input-item1" />
-                                </div>
-                                <div class="header__input">
-                                    <input type="text" placeholder="Время" class="header__input-item2" />
-                                </div>
-                                <div class="header__input">
-                                    <input type="text" placeholder="Количество людей" class="header__input-item3" />
-                                </div>
-                            </div>
-
-                            <div class="header__input">
-                                <input type="text" placeholder="Ресторан" class="header__input-item4" />
-                            </div>
-                            <button class="header__button default-button">
-                                Заказать
-                            </button> */}
-
-                   
-
+                    <BookingForm />
                 </div>
             </div>
 
@@ -85,9 +60,6 @@ const MainPage = () => {
                 </div>
             </section>
         </>
-
-
-
     )
 }
 

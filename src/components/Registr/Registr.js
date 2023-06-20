@@ -1,5 +1,5 @@
 import React from 'react'
-import'./registr.css';
+import './registr.css';
 import logo from '../../images/logo.svg'
 const Registr = () => {
     return (
@@ -20,7 +20,7 @@ const Registr = () => {
                         Регистрация
                     </button>
                     <a href="#" className="section__city">Забыли пароль?</a>
-                    
+
                 </div>
             </div>
         </div>

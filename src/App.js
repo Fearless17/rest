@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Link} from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Registr from './components/Registr/Registr';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       {/* <Registr/> */}
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<MainPage />}/>
-        <Route path='/profile' element={<ProfilePage />}/>
-        <Route path='/restaraunt' element={<RestarauntPage />}/>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/restaraunt' element={<RestarauntPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

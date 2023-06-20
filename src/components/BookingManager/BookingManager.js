@@ -1,4 +1,5 @@
 import React from 'react'
+import './bookingmanager.css'
 
 const BookingManager = () => {
     return (

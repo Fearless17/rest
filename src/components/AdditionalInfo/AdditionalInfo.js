@@ -47,7 +47,7 @@ const dataListAddInfo = [
   }
 ]
 const AdditionalInfo = () => {
-  const addInfoList = dataListAddInfo.map((el, index) => <DescriptionItem img={el.img} alt={el.alt} title={el.title} subtitle={el.subtitle} key={index}/>)
+  const addInfoList = dataListAddInfo.map((el, index) => <DescriptionItem img={el.img} alt={el.alt} title={el.title} subtitle={el.subtitle} key={index} />)
 
   return (
     <div className='add-info'>
@@ -55,16 +55,16 @@ const AdditionalInfo = () => {
         <span className='add-info__book-title'>Сделать заказ</span>
         <div className='add-info__book-inputs'>
           <div className="add-info__book-input">
-            <input type="text" placeholder="Дата" className="default-input input-item"/>
+            <input type="text" placeholder="Дата" className="default-input input-item" />
           </div>
           <div className="add-info__book-input">
-            <input type="text" placeholder="Время" className="default-input input-item"/>
+            <input type="text" placeholder="Время" className="default-input input-item" />
           </div>
           <div className="add-info__book-input">
-            <input type="text" placeholder="Количество людей" className="default-input input-item"/>
+            <input type="text" placeholder="Количество людей" className="default-input input-item" />
           </div>
           <div className="add-info__book-input">
-            <input type="text" placeholder="Ресторан" className="default-input input-item"/>
+            <input type="text" placeholder="Ресторан" className="default-input input-item" />
           </div>
           <button className="header__button default-button">
             Заказать

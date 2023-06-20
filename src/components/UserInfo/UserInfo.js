@@ -1,5 +1,6 @@
 import React from 'react'
 import avatar from '../../images/avatar.png'
+import './userinfo.css'
 
 const UserInfo = () => {
     return (

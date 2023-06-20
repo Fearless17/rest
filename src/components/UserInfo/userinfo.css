@@ -1,0 +1,16 @@
+    .header-user {
+      border: 1px solid #B6B6B6;
+    }
+    .header-user__content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px 70px;
+    }
+    .header-user__img {
+      padding-right: 15px;
+    }
+    .header-user__name {
+      font-size: 30px;
+      color: #141A26;
+    }

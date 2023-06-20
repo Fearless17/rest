@@ -1,0 +1,36 @@
+.section-user {
+    background: #F7F7F7;
+}
+
+.section-user__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 20px;
+    padding-bottom: 400px;
+}
+
+@media (max-width: 1380px) {
+    .section-user__content {
+        display: block;
+    }
+}
+
+.section-user__title {
+    color: #2D333F;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.section-user__subtitle {
+    color: #2D333F;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.container-user {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}

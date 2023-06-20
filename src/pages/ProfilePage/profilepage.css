@@ -1,195 +1,24 @@
-.header-user {
-  border: 1px solid #B6B6B6;
-}
-.header-user__content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px 70px;
-}
-.header-user__img {
-  padding-right: 15px;
-}
-.header-user__name {
-  font-size: 30px;
-  color: #141A26;
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
 }
 
-.section-user {
-  background: #F7F7F7;
+input, button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
 }
-.section-user__content {
-  display: flex;
-  justify-content: space-between;
-  padding: 54px 20px;
-  padding-bottom: 400px;
+
+ul, li {
+  list-style: none;
 }
-@media (max-width: 1380px) {
-  .section-user__content {
-    display: block;
-  }
+
+a {
+  background: inherit;
+  text-decoration: none;
 }
-.section-user__left {
-  padding-top: 40px;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 1380px) {
-  .section-user__left {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-@media (max-width: 870px) {
-  .section-user__left {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-  }
-}
-.section-user__right {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+
+body {
+  font-family: "Roboto", sans-serif;
   background: #FFFEFE;
-  border-radius: 5px;
-  padding-bottom: 60px;
-}
-.section-user__right ::placeholder {
-  color: #2D333F;
-  opacity: 0.65;
-  text-overflow: ellipsis;
-}
-.section-user__right input {
-  padding: 6px 20px;
-  border-right: 0.25px solid #767676;
-  border: 0.5px solid #767676;
-}
-@media (max-width: 1380px) {
-  .section-user__right {
-    text-align: center;
-  }
-}
-.section-user .header__input-item1 {
-  border-right: none;
-}
-.section-user .header__input-item3 {
-  border-left: none;
-}
-.section-user__title {
-  color: #2D333F;
-  font-size: 30px;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-}
-.section-user__subtitle {
-  color: #2D333F;
-  padding-left: 20px;
-  padding-bottom: 15px;
-}
-.section-user .header__inputs {
-  font-size: 24px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-  padding-right: 60px;
-}
-@media (max-width: 1380px) {
-  .section-user .header__inputs {
-    display: block;
-    padding: 15px 20px;
-  }
-}
-@media (max-width: 1380px) {
-  .section-user .header__inputs > *:not(:last-child) {
-    padding-bottom: 20px;
-  }
-}
-@media (max-width: 1380px) {
-  .section-user .header__input-item1 {
-    border-right: 0.5px solid #767676;
-    border-radius: 19px !important;
-  }
-}
-@media (max-width: 1380px) {
-  .section-user .header__input-item2 {
-    border-radius: 19px !important;
-  }
-}
-@media (max-width: 1380px) {
-  .section-user .header__input-item3 {
-    border-left: 0.5px solid #767676;
-    border-radius: 19px !important;
-  }
-}
-.section-user__bron {
-  font-size: 24px;
-  padding-left: 20px;
-  padding-right: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.section-user__right .form{
-  flex-direction: column;
-}
-.section-user__right .form .header__inputs{
- margin-right: 0px;
-}
-.section-user__right .form input{
-  border-radius: 19px;
-}
-.section-user__right .form .section-user__bron{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.section-user__right .form .section-user__bron .header__input{
-  flex: 2;
-  margin-right: 10px;
-}
-.section-user__right .form .section-user__bron .header__input input{
-  width: 100%;
-}
-.section-user__right .form .section-user__bron .header__button{
-  flex: 0.7;
-}
-.section-user__bron.header__input {
-  width: 67%;
-}
-.section-user__bron.header__input input {
-  width: 100%;
-  border-radius: 19px;
-}
-@media (max-width: 1380px) {
-  .section-user__bron.header__input {
-    width: auto;
-    padding-top: 0;
-    padding-bottom: 20px;
-  }
-}
-.section-user__bron.header__button {
-  padding: 5px 10px;
-}
-@media (max-width: 1380px) {
-  .section-user__bron.header__button {
-    width: auto;
-  }
-}
-@media (max-width: 1380px) {
-  .section-user__bron {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 20px;
-    padding-top: 0;
-  }
-}
-
-.container-user{
-  max-width: 1600px;
-  margin: 0 auto;
-  width: 100%;
+  font-size: 16px;
 }
