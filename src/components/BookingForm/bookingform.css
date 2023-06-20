@@ -1,0 +1,17 @@
+.form{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__inputs{
+    display: flex;
+    margin-right: 32px;
+}
+.section-user__bron{
+    display: flex;
+    justify-content: space-between;
+}
+.header__input-item4{
+    margin-right: 36px;
+}

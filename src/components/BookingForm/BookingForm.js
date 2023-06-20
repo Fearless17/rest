@@ -1,25 +1,25 @@
 import React from 'react'
-
+import './bookingform.css'
 const BookingForm = () => {
     return (
         
         <div className='form'>
-            <div class="header__inputs">
-                <div class="header__input">
-                    <input type="text" placeholder="Дата" class="header__input-item1" />
+            <div className="header__inputs">
+                <div className="header__input">
+                    <input type="text" placeholder="Дата" className='header__input-item1'/>
                 </div>
-                <div class="header__input">
-                    <input type="text" placeholder="Время" class="header__input-item2" />
+                <div className="header__input">
+                    <input type="text" placeholder="Время" className='header__input-item2'/>
                 </div>
-                <div class="header__input">
-                    <input type="text" placeholder="Количество людей" class="header__input-item3" />
+                <div className="header__input">
+                    <input type="text" placeholder="Количество людей" className='header__input-item3' />
                 </div>
             </div>
-            <div class="section-user__bron">
-                <div class="header__input">
-                    <input type="text" placeholder="Ресторан" class="header__input-item4"/>
+            <div className="section-user__bron">
+                <div className="header__input ">
+                    <input type="text" placeholder="Ресторан" className='header__input-item4'/>
                 </div>
-                <button class="header__button default-button">
+                <button className="header__button default-button">
                     Заказать
                 </button>
             </div>
