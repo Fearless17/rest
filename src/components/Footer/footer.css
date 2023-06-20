@@ -1,0 +1,43 @@
+.footer {
+    background: #2D333F;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 35px 0;
+}
+
+.footer__content>* {
+    margin-bottom: 25px;
+}
+
+.footer__content> :last-child {
+    margin-bottom: 0px;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icons>* {
+    margin-right: 5px;
+}
+
+.footer__icons> :last-child {
+    margin-right: 0px;
+}
+
+.footer__copyright {
+    color: #D8D9DB;
+}
+
+a {
+    color: #fff;
+}

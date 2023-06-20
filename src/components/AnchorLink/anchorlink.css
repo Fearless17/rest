@@ -1,0 +1,21 @@
+.anchor_link {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #6F737B;
+    font-size: 28px;
+    background: inherit;
+}
+.anchor_link:active, .anchor_link:hover{
+    color: #DA3743;
+    border-bottom: 2px solid #DA3743;
+}
+@media screen and (max-width: 512px){
+    .anchor_link{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 413px){
+    .anchor_link{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.menu_rest-item{
+    font-size: 25px;
+}
+@media screen and (max-width: 512px){
+    .menu_rest-item{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 413px){
+    .menu_rest-item{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,22 @@
+.add-info__description-item{
+    display: flex;
+    justify-content: flex-start;
+    color: #2D333F;
+    margin-bottom: 30px;
+}
+.add-info__description-item_img{
+    margin-right: 20px;
+}
+.add-info__description-item_titles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.add-info__description-item_title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.add-info__description-item_subtitle{
+    font-size: 18px;
+}

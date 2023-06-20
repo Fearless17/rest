@@ -1,0 +1,146 @@
+.rest-main {
+    flex: 1.5;
+    background: #fff;
+    margin-right: 62px;
+    border-radius: 19px;
+    padding: 60px 30px;
+}
+
+.rest-main__links {
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #9D9999;
+}
+
+.rest-info__name {
+    max-width: 550px;
+    padding: 25px 0;
+    border-bottom: 1px solid #9D9999;
+}
+
+.rest-info__title {
+    font-size: 44px;
+    color: #2D333F;
+}
+
+.rest-description {
+    margin: 25px 0;
+}
+
+.rest-score {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.rest-score div:not(:last-child) {
+    margin-right: 26px;
+}
+
+.rest-score div span {
+    margin-left: 12px;
+}
+
+.rest-description__text {
+    margin: 25px 0;
+}
+
+.rest-description__text span {
+    font-size: 20px;
+}
+
+.rest-photos__title {
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9D9999;
+    margin-bottom: 20px;
+}
+
+.rest-photos__title h2 {
+    margin-left: 15px;
+    font-size: 26px;
+    color: #2D333F;
+}
+
+.rest-photos__images {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rest-photos__images .block-img3 {
+    position: relative;
+}
+
+.block-img3 span {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    right: 30%;
+}
+.rest-menu{
+    margin-bottom: 20px;
+}
+.rest-menu__list{
+    display: flex;
+    align-items: center;
+}
+.rest-menu__list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rest-menu__list-item:not(:last-child){
+    margin-left: 15px;
+    margin-right: 60px;
+}
+.rest-comments{
+    margin-bottom: 100px;
+}
+.rest-comments__list{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media screen and (max-width: 614px) {
+    .rest-main-links{
+        width: 100%;
+    }
+    .rest-photos__images{
+        gap: 10px;
+    }
+    .rest-info__name{
+        width: 100%;
+    }
+    .rest-comments__list{
+        width: 100%;
+    }
+    .rest-info__title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .rest-score div:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+}
+@media screen and (max-width: 487px){
+    .rest-score{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rest-score div {
+        margin-bottom: 10px;
+    }
+}

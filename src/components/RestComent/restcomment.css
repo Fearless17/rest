@@ -1,0 +1,17 @@
+.rest-comment{
+    width: 100%;
+    border-bottom: 1px solid #9D9999;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.rest-comment__user{
+    margin-right: 45px;
+    text-align: center;
+}
+.rest-comment__user-score{
+    margin-top: 15px;
+}
+.rest-comment__user-stars{
+    margin-bottom: 7px;
+}

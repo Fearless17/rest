@@ -1,0 +1,12 @@
+.info-title {
+    max-width: 550px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9D9999;
+    margin-bottom: 20px;
+}
+
+.info-title  h2 {
+    margin-left: 15px;
+    font-size: 26px;
+    color: #2D333F;
+}
