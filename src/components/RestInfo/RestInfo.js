@@ -26,7 +26,7 @@ const RestInfo = (props) => {
                 {linksList1}
             </div>
             <div className='rest-info__name'>
-                <h1 className="rest-info__title">{props.name}</h1>
+                <h1 className="rest-info__title">{props.name ? (props.name) : ('Ресторан Москва')}</h1>
             </div>
             <div className='rest-description'>
                 <div className='rest-score'>
@@ -49,7 +49,7 @@ const RestInfo = (props) => {
 
                 </div>
                 <div className="rest-description__text">
-                    <span>{props.description}</span>
+                    <span>{props.description ? (props.description) : ('Попробуйте лучшую русскую кухню')}</span>
                 </div>
             </div>
             <div className='rest-photos'>

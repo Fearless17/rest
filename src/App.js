@@ -17,6 +17,7 @@ function App() {
         <Route path='/' element={<MainPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/restaraunt/:name/:description/:city' element={<RestarauntPage />} />
+        <Route path='/restaraunt' element={<RestarauntPage />} />
       </Routes>
       <Footer />
     </div>

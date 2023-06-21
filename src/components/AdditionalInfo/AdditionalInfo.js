@@ -15,7 +15,7 @@ const AdditionalInfo = (props) => {
       img: city,
       alt: 'city',
       title: 'Город',
-      subtitle: props.city
+      subtitle: props.city ? (props.city) : 'Москва'
     },
     {
       img: clock,
