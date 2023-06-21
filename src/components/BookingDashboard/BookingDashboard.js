@@ -7,19 +7,19 @@ import './bookingdashboard.css'
 const BookingDashboard = () => {
     return (
         <div>
-            <section class="section-user">
-                <div class="container-user">
-                    <div class="section-user__content">
-                        <div class="section-user__left">
+            <section className="section-user">
+                <div className="container-user">
+                    <div className="section-user__content">
+                        <div className="section-user__left">
                             <BookingManager />
                         </div>
 
 
-                        <div class="section-user__right">
-                            <h2 class="section-user__title">
+                        <div className="section-user__right">
+                            <h2 className="section-user__title">
                                 У вас нет предстоящих бронирований
                             </h2>
-                            <span class="section-user__subtitle">Найдите свой столик для любого случая</span>
+                            <span className="section-user__subtitle">Найдите свой столик для любого случая</span>
                             <BookingForm />
                         </div>
                     </div>

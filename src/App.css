@@ -42,11 +42,15 @@ body {
   padding: 6px 45px;
   border-radius: 19px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-
+.default-button:hover{
+  background: #d61724;
+}
 .section__city {
   color: #141A26;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 .section__city:hover {
   color: #FF1B2B;

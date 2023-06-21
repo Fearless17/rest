@@ -8,45 +8,48 @@ import card from '../../images/card.svg'
 import site from '../../images/site.svg'
 import phone from '../../images/phone.svg'
 
-const dataListAddInfo = [
-  {
-    img: city,
-    alt: 'city',
-    title: 'Город',
-    subtitle: 'Москва'
-  },
-  {
-    img: clock,
-    alt: 'clock',
-    title: 'Время работы',
-    subtitle: 'Вт 11:00-16:00'
-  },
-  {
-    img: kitchen1,
-    alt: 'kitchen',
-    title: 'Кухни',
-    subtitle: 'Русская'
-  },
-  {
-    img: card,
-    alt: 'card',
-    title: 'Варианты оплаты',
-    subtitle: 'MasterCard, Visa'
-  },
-  {
-    img: site,
-    alt: 'site',
-    title: 'Веб-сайт',
-    subtitle: 'https://moscow-restaraunt.com'
-  },
-  {
-    img: phone,
-    alt: 'phone',
-    title: 'Телефон',
-    subtitle: '+ 375 77 777 77 77'
-  }
-]
-const AdditionalInfo = () => {
+
+const AdditionalInfo = (props) => {
+  const dataListAddInfo = [
+    {
+      img: city,
+      alt: 'city',
+      title: 'Город',
+      subtitle: props.city
+    },
+    {
+      img: clock,
+      alt: 'clock',
+      title: 'Время работы',
+      subtitle: 'Вт 11:00-16:00'
+    },
+    {
+      img: kitchen1,
+      alt: 'kitchen',
+      title: 'Кухни',
+      subtitle: 'Русская'
+    },
+    {
+      img: card,
+      alt: 'card',
+      title: 'Варианты оплаты',
+      subtitle: 'MasterCard, Visa'
+    },
+    {
+      img: site,
+      alt: 'site',
+      title: 'Веб-сайт',
+      subtitle: 'https://moscow-restaraunt.com'
+    },
+    {
+      img: phone,
+      alt: 'phone',
+      title: 'Телефон',
+      subtitle: '+ 375 77 777 77 77'
+    }
+  ]
+
+
   const addInfoList = dataListAddInfo.map((el, index) => <DescriptionItem img={el.img} alt={el.alt} title={el.title} subtitle={el.subtitle} key={index} />)
 
   return (

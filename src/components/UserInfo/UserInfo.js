@@ -4,13 +4,13 @@ import './userinfo.css'
 
 const UserInfo = () => {
     return (
-        <header class="header-user">
-            <div class="container-user">
-                <div class="header-user__content">
+        <header className="header-user">
+            <div className="container-user">
+                <div className="header-user__content">
                     <div className="header-user__img">
                         <img src={avatar} alt="user" />
                     </div>
-                    <div class="header-user__name">
+                    <div className="header-user__name">
                         MyName
                     </div>
                 </div>

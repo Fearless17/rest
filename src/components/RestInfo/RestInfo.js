@@ -16,7 +16,8 @@ import RestComment from '../RestComent/RestComment'
 
 const dataLinks1 = ['Обзор', 'Фото', 'Меню', 'Отзывы']
 const dataLinks2 = ['Все', 'Еда', 'Напитки', 'Интерьер']
-const RestInfo = () => {
+const RestInfo = (props) => {
+    console.log(props)
     const linksList1 = dataLinks1.map((el, index) => <AnchorLink name={el} key={index} />)
     const linksList2 = dataLinks2.map((el, index) => <AnchorLink name={el} key={index} />)
     return (
@@ -25,7 +26,7 @@ const RestInfo = () => {
                 {linksList1}
             </div>
             <div className='rest-info__name'>
-                <h1 className="rest-info__title">Ресторан Москва</h1>
+                <h1 className="rest-info__title">{props.name}</h1>
             </div>
             <div className='rest-description'>
                 <div className='rest-score'>
@@ -48,7 +49,7 @@ const RestInfo = () => {
 
                 </div>
                 <div className="rest-description__text">
-                    <span>Попробуйте лучшую русскую кухню</span>
+                    <span>{props.description}</span>
                 </div>
             </div>
             <div className='rest-photos'>
