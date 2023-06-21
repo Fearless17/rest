@@ -8,6 +8,7 @@
     .section-user__left {
       flex-direction: row;
       justify-content: space-around;
+      gap: 30px;
     }
   }
   @media (max-width: 870px) {

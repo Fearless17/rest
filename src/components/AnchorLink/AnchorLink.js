@@ -2,7 +2,7 @@ import React from 'react'
 import './anchorlink.css'
 const AnchorLink = (props) => {
   return (
-    <div className='anchor_link'>{props.name}</div>
+    <a href={props.href} className='anchor_link'>{props.name}</a>
   )
 }
 

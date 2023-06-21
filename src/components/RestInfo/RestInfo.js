@@ -14,21 +14,43 @@ import RestComment from '../RestComent/RestComment'
 
 
 
-const dataLinks1 = ['Обзор', 'Фото', 'Меню', 'Отзывы']
+const dataLinks1 = [
+    {
+
+        name: 'Обзор',
+        href: '#obzor'
+    },
+    {
+
+        name: 'Фото',
+        href: '#photo'
+    },
+    {
+
+        name: 'Меню',
+        href: '#menu'
+    },
+    {
+
+        name: 'Отзывы',
+        href: '#comments'
+    }
+]
+
 const dataLinks2 = ['Все', 'Еда', 'Напитки', 'Интерьер']
 const RestInfo = (props) => {
     console.log(props)
-    const linksList1 = dataLinks1.map((el, index) => <AnchorLink name={el} key={index} />)
+    const linksList1 = dataLinks1.map((el, index) => <AnchorLink name={el.name} href={el.href} key={index} />)
     const linksList2 = dataLinks2.map((el, index) => <AnchorLink name={el} key={index} />)
     return (
         <div className='rest-main'>
             <div className='rest-main__links'>
                 {linksList1}
             </div>
-            <div className='rest-info__name'>
+            <div className='rest-info__name' id='obzor'>
                 <h1 className="rest-info__title">{props.name ? (props.name) : ('Ресторан Москва')}</h1>
             </div>
-            <div className='rest-description'>
+            <div className='rest-description' >
                 <div className='rest-score'>
                     <div className='rest-score__stars'>
                         <img src={star} alt="star" />
@@ -52,7 +74,7 @@ const RestInfo = (props) => {
                     <span>{props.description ? (props.description) : ('Попробуйте лучшую русскую кухню')}</span>
                 </div>
             </div>
-            <div className='rest-photos'>
+            <div className='rest-photos' id='photo'>
                 <InfoTitle name='10 Фотографий' />
                 <div className='rest-main__links'>
                     {linksList2}
@@ -72,7 +94,7 @@ const RestInfo = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='rest-menu'>
+            <div className='rest-menu' id='menu'>
                 <InfoTitle name='Меню' />
                 <div className='rest-menu__list'>
                     <div className='rest-menu__list-item'>
@@ -89,7 +111,7 @@ const RestInfo = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='rest-comments'>
+            <div className='rest-comments' id='comments'>
                 <InfoTitle name='Отзывы' />
                 <div className='rest-comments__list'>
                     <RestComment text='Лучший ресторан' />
